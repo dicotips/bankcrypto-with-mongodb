@@ -1,6 +1,6 @@
 function Navbar() {
   return (
-    <nav fill variant="tabs" className="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <a className="navbar-brand" href="./index.html">
         <img src="./_img/bitcoin_logo.png" width="30" height="30" />
         Bank-Crypto

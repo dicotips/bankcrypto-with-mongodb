@@ -54,7 +54,7 @@ function Form(props) {
       case 'CreateAccount':
         post({name, email, password}, '/account/createaccount')
           .then((user) => {
-            user ? props.setShowForm(false) : setErrorMessage('The user was not created.');
+            user ? props.setShowForm(false) : setErrorMessage('El usuario no ha sido creado.');
           });
         break;
       
@@ -67,7 +67,7 @@ function Form(props) {
             if (userPassword === password) {
               context.setCurrentUser(user._id);
             } else {
-              setErrorMessage('The email and password combination is incorrect');
+              setErrorMessage('La combinacion de email y password es incorrecta');
               return;
             }
           });
